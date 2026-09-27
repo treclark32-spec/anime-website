@@ -1,0 +1,68 @@
+/* Styles the whole webpage */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Styles the main heading */
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Styles the second-level headings */
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Styles all paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Styles the header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+/* Styles sections that use the content-section class */
+.content-section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Styles the Learn More section */
+.link-section {
+    text-align: center;
+}
+
+/* Styles the What Is Anime section */
+#about-anime {
+    border: 3px solid black;
+}
+
+/* Styles the Anime Genres section */
+#anime-genres {
+    border: 3px solid darkblue;
+}
+/* Uses Flexbox to organize the main content */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Controls the size of sections inside the Flexbox */
+.flex-container section {
+    flex: 1;
+    min-width: 250px;
+}
