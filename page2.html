@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <!-- This sets the character encoding for the webpage -->
     <meta charset="UTF-8">
 
-    <!-- This is the title shown on the browser tab -->
+    <!-- Helps the website display correctly on phones and smaller screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Popular Anime Series</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -15,10 +16,15 @@
     <!-- Header: introduces the topic of this page -->
     <header>
         <h1>Popular Anime Series</h1>
-        <h2>Anime Around the World</h2>
+
+        <!-- Main navigation -->
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="page2.html">Popular Anime Series</a>
+        </nav>
     </header>
 
-    <!-- Main: contains the main information on this page -->
+    <!-- Main content -->
     <main class="flex-container">
 
         <!-- Section: discusses popular anime -->
@@ -43,10 +49,9 @@
             <h2>Examples of Popular Anime</h2>
 
             <p>
-                Here are some animes that have large fan bases:
+                Here are some anime series that have large fan bases:
             </p>
- 
-            <!-- Ordered list: displays the anime in numbered order -->
+
             <ol>
                 <li>Naruto</li>
                 <li>Dragon Ball</li>
@@ -62,27 +67,33 @@
             <h2>Why People Enjoy Anime</h2>
 
             <p>
-                People watch anime for a lot of different reasons. Some enjoy the action and the fight scene 
-                animation, while others enjoy the character developement , back stories,
-                and emotional moments.
+                People watch anime for many different reasons. Some enjoy the action
+                and fight scenes, while others enjoy the character development,
+                backstories, and emotional moments.
             </p>
 
             <p>
-                All the different type of animes means that viewers can easily find a series
-                that matches their interests.
+                The many different types of anime make it easy for viewers to find
+                a series that matches their interests.
             </p>
         </section>
 
+        <!-- Section: contains an anime image -->
+        <section class="content-section">
+            <h2>Anime Characters</h2>
+
+            <img
+                src="images/von%202.jpeg"
+                alt="Sasuke Uchiha, a character from the anime Naruto"
+                width="750">
+        </section>
+
     </main>
-<!-- Image showing anime characters -->
-<img src="images/von%202.jpeg"
-     alt="Sasuke Uchiha"
-     width="750">
+
     <!-- Footer: links back to the home page -->
     <footer>
-        <p>
-            <a href="index.html">Back to Home</a>
-        </p>
+        <p>The World of Anime</p>
+        <a href="index.html">Return to The World of Anime Home Page</a>
     </footer>
 
 </body>

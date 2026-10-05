@@ -1,8 +1,10 @@
 /* Styles the whole webpage */
 body {
     background-color: lightblue;
+    color: #111111;
     font-family: Arial, sans-serif;
     font-size: 18px;
+    margin: 0;
 }
 
 /* Styles the main heading */
@@ -28,14 +30,40 @@ header {
     padding: 20px;
 }
 
+/* Styles the navigation */
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Styles navigation links */
+nav a {
+    color: #000066;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Styles all links */
+a {
+    color: #000066;
+}
+
+/* Makes links easier to identify when using a keyboard */
+a:focus {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+}
+
 /* Styles the footer */
 footer {
     text-align: center;
     padding: 20px;
 }
+
 /* Styles sections that use the content-section class */
 .content-section {
     background-color: white;
+    color: #111111;
     margin: 20px;
     padding: 20px;
 }
@@ -54,6 +82,7 @@ footer {
 #anime-genres {
     border: 3px solid darkblue;
 }
+
 /* Uses Flexbox to organize the main content */
 .flex-container {
     display: flex;
@@ -65,4 +94,46 @@ footer {
 .flex-container section {
     flex: 1;
     min-width: 250px;
+}
+
+/* Makes images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Changes the website layout on smaller screens */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }

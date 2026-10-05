@@ -2,25 +2,30 @@
 <html lang="en">
 
 <head>
-    <!-- This sets the character encoding for the webpage -->
     <meta charset="UTF-8">
 
-    <!-- This is the title shown on the browser tab -->
-    <title>The World of Anime</title>
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <!-- Helps the website display correctly on phones and smaller screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>The World of Anime</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
 <body>
 
-    <!-- Header: introduces the website and its main topic -->
+    <!-- Header: introduces the website -->
     <header>
         <h1>The World of Anime</h1>
-        <h2>History and Popularity of Anime</h2>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="page2.html">Popular Anime Series</a>
+        </nav>
     </header>
 
-    <!-- Main: contains the main information on this page -->
-    <main class="flex-container"> 
+    <!-- Main content -->
+    <main class="flex-container">
+
         <!-- Section: explains what anime is -->
         <section id="about-anime" class="content-section">
             <h2>What Is Anime?</h2>
@@ -28,32 +33,40 @@
             <p>
                 Anime is a style of animated entertainment that originated in Japan.
                 It includes different types of stories, characters, and art styles.
-                Anime can be made for anyone no matter the age.
+                Anime can be made for people of many different ages.
             </p>
 
             <p>
-                Anime has become popular around the world because of its very diffrent style of
-                storytelling and creative animation. Series that are realy good
-                such as Naruto, Dragon Ball, One Piece, and Attack on Titan have
-                gained large audiences around the world.
+                Anime has become popular around the world because of its different
+                style of storytelling and creative animation. Popular series such as
+                Naruto, Dragon Ball, One Piece, and Attack on Titan have gained
+                large audiences around the world.
             </p>
 
-            <!-- Image: uses a relative path to an image inside the images folder -->
-            <img src="images/von.jpeg" alt="Luffy from One Piece" width="500">
+            <img
+                src="images/von.jpeg"
+                alt="Luffy, the main character from the anime One Piece"
+                width="500">
         </section>
+
+        <!-- Section: explains the popularity of anime -->
+        <section class="content-section">
+            <h2>Anime Around the World</h2>
+
             <p>
-    Anime has fans all around the world and continues to grow in popularity.
-</p>
-        <!-- Section: explains some common anime genres -->
+                Anime has fans all around the world and continues to grow in popularity.
+            </p>
+        </section>
+
+        <!-- Section: explains common anime genres -->
         <section id="anime-genres" class="content-section">
             <h2>Anime Genres</h2>
 
             <p>
-                Anime covers many different genres. Some of the most common anime genres
-                are action, adventure, comedy, fantasy, and science fiction.
+                Anime covers many different genres. Some of the most common anime
+                genres are action, adventure, comedy, fantasy, and science fiction.
             </p>
 
-            <!-- Unordered list: displays anime genres as bullet points -->
             <ul>
                 <li>Action</li>
                 <li>Adventure</li>
@@ -63,25 +76,26 @@
             </ul>
         </section>
 
-        <!-- Section: provides a link to the second page -->
+        <!-- Section: provides a meaningful link to the second page -->
         <section class="content-section link-section">
-            <h2>Learn More</h2>
+            <h2>Learn More About Anime</h2>
 
             <p>
                 Continue to the next page to learn about popular anime series
                 and why people enjoy watching them.
             </p>
 
-            <a href="page2.html">Read More About Anime</a>
+            <a href="page2.html">Explore Popular Anime Series</a>
         </section>
 
     </main>
 
-    <!-- Footer: provides navigation to the other page -->
+    <!-- Footer -->
     <footer>
-        <p>
-            <a href="page2.html">Go to Page 2</a>
-        </p>
+        <p>The World of Anime</p>
+        <a href="page2.html">Learn About Popular Anime Series</a>
     </footer>
-   </body>
+
+</body>
+
 </html>
