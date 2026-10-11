@@ -1,108 +1,112 @@
+
 /* Styles the whole webpage */
 body {
     background-color: lightblue;
     color: #111111;
     font-family: Arial, sans-serif;
     font-size: 18px;
-    margin: 0;
 }
 
 /* Styles the main heading */
 h1 {
     text-align: center;
     font-size: 40px;
+    font-weight: bold;
 }
 
 /* Styles the second-level headings */
 h2 {
     text-align: center;
     font-size: 28px;
+    margin-bottom: 15px;
 }
 
-/* Styles all paragraphs */
+/* Styles paragraphs */
 p {
     line-height: 1.6;
 }
 
-/* Styles the header */
+/* Custom header colors */
 header {
-    text-align: center;
-    padding: 20px;
+    background-color: #003366;
+    color: white;
 }
 
-/* Styles the navigation */
-nav {
-    text-align: center;
-    margin-top: 15px;
-}
-
-/* Styles navigation links */
-nav a {
-    color: #000066;
+/* Custom navigation buttons */
+nav .btn-primary,
+.link-section .btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    color: white;
     font-weight: bold;
-    margin: 0 10px;
 }
 
-/* Styles all links */
-a {
+/* Button hover effect */
+nav .btn-primary:hover,
+.link-section .btn-primary:hover {
+    background-color: #0055aa;
+    border-color: #0055aa;
+    color: white;
+}
+
+/* Styles regular links */
+a:not(.btn) {
     color: #000066;
 }
 
-/* Makes links easier to identify when using a keyboard */
-a:focus {
+/* Keyboard accessibility */
+a:focus-visible {
     outline: 3px solid #000000;
     outline-offset: 3px;
 }
 
-/* Styles the footer */
-footer {
-    text-align: center;
-    padding: 20px;
+nav .btn:focus-visible {
+    outline-color: white;
 }
 
-/* Styles sections that use the content-section class */
+/* Custom content sections */
 .content-section {
     background-color: white;
     color: #111111;
-    margin: 20px;
     padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #003366;
 }
 
-/* Styles the Learn More section */
+/* Centers the Learn More section */
 .link-section {
     text-align: center;
 }
 
-/* Styles the What Is Anime section */
-#about-anime {
+/* Custom border for anime section */
+#about-anime .content-section {
     border: 3px solid black;
 }
 
-/* Styles the Anime Genres section */
-#anime-genres {
+/* Custom border for genres section */
+#anime-genres .content-section {
     border: 3px solid darkblue;
 }
 
-/* Uses Flexbox to organize the main content */
-.flex-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+/* Styles the footer */
+footer {
+    background-color: #003366;
+    color: white;
 }
 
-/* Controls the size of sections inside the Flexbox */
-.flex-container section {
-    flex: 1;
-    min-width: 250px;
+/* Footer links */
+footer a {
+    color: white !important;
+    text-decoration: underline;
 }
 
-/* Makes images responsive */
-img {
+/* Responsive images */
+.content-section img {
     max-width: 100%;
     height: auto;
 }
 
-/* Changes the website layout on smaller screens */
+/* Adjusts text on smaller screens */
 @media (max-width: 768px) {
 
     body {
@@ -117,23 +121,7 @@ img {
         font-size: 24px;
     }
 
-    .flex-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .content-section {
-        margin: 10px;
         padding: 15px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
     }
 }
